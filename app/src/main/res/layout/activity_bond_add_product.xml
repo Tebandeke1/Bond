@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bond.SellerAddNewProductActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/car_image"
+                    android:layout_width="310dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/small_cars"
+                    android:scaleType="centerCrop"
+                    android:cropToPadding="false"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <EditText
+                    android:id="@+id/car_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/car_colour"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/input_design"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textMultiLine"
+                    android:hint="@string/car_name"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="50dp"/>
+
+                <EditText
+                    android:id="@+id/car_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/car_price"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/input_design"
+                    android:padding="20dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textMultiLine"
+                    android:hint="@string/description_model_etc"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="50dp"/>
+
+                <EditText
+                    android:id="@+id/car_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/car_name"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/input_design"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textMultiLine"
+                    android:hint="@string/car_price"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="50dp"/>
+
+                <EditText
+                    android:id="@+id/car_colour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/car_image"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/input_design"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textMultiLine"
+                    android:hint="@string/car_colour"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="50dp"/>
+
+                <Button
+                    android:id="@+id/car_submit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/car_description"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/button"
+                    android:layout_marginRight="50dp"
+                    android:padding="20dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/White"
+                    android:textSize="15dp"
+                    android:text="@string/submit_product"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="9dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardElevation="15dp"
+    tools:context=".Admin.EditProductActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/change_product_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_marginTop="3dp"
+                    android:scaleType="centerCrop"
+                    />
+
+                <EditText
+                    android:id="@+id/change_product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/change_product_Image"
+                    android:layout_marginTop="3dp"
+                    android:textAlignment="center"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:hint="Product Name"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/change_product_colour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/change_product_name"
+                    android:layout_marginTop="3dp"
+                    android:textAlignment="center"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:hint="@string/product_colour"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/change_product_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/change_product_colour"
+                    android:layout_marginTop="3dp"
+                    android:textAlignment="center"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:hint="Product Price"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/change_product_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/change_product_price"
+                    android:layout_marginTop="3dp"
+                    android:textAlignment="center"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:hint="Car Description "
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="15dp" />
+
+
+                <EditText
+                    android:id="@+id/change_product_bond_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/change_product_description"
+                    android:layout_marginTop="3dp"
+                    android:textAlignment="center"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:hint="Bond Name and Address"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/apply_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/White"
+                    android:text="Apply changes"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_below="@id/change_product_bond_name" />
+
+                <Button
+                    android:id="@+id/delete_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/White"
+                    android:text="Delete Product"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_below="@id/apply_btn" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</androidx.cardview.widget.CardView>

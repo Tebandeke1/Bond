@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Chart"
+            android:icon="@drawable/nav"
+            android:title="@string/menu_gallery"
+            android:iconTint="@color/White"/>
+        <item
+            android:id="@+id/search"
+            android:icon="@drawable/ic_search"
+            android:title="Search Product"
+            android:iconTint="@color/White"/>
+
+        <item
+            android:id="@+id/BondTypes"
+            android:icon="@drawable/ic_view_list"
+            android:title="Bond Types"
+            android:iconTint="@color/White"/>
+        <item
+            android:id="@+id/categories"
+            android:icon="@drawable/cate"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_tools"
+            android:iconTint="@color/White"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share"
+                android:iconTint="@color/White"/>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/log_out"
+                android:title="@string/menu_send"
+                android:iconTint="@color/White"/>
+        </menu>
+    </item>
+
+</menu>

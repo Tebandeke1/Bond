@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bond.BondCatgoryActivity">
+
+
+    <TextView
+        android:id="@+id/text_add_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_product"
+        android:layout_marginTop="28dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:id="@+id/linear_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_add_product"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/small_cars"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            app:srcCompat="@drawable/small_cars" />
+
+        <ImageView
+            android:id="@+id/offroad4x4"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            app:srcCompat="@drawable/icon4x4" />
+
+        <ImageView
+            android:id="@+id/box_body"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/deli"/>
+
+        <ImageView
+            android:id="@+id/transport_lory"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            app:srcCompat="@drawable/transportlorry1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_category"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/taxi_vans"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+             app:srcCompat="@drawable/vans1"/>
+
+        <ImageView
+            android:id="@+id/luxury"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            app:srcCompat="@drawable/lim"/>
+
+        <ImageView
+            android:id="@+id/ambulance"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            app:srcCompat="@drawable/ambulanceicon"/>
+
+        <ImageView
+            android:id="@+id/mini_bus"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            app:srcCompat="@drawable/minibus1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2_category"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/compatible"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            app:srcCompat="@drawable/convertible1" />
+
+        <ImageView
+            android:id="@+id/bus_coach"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+             app:srcCompat="@drawable/transpotcoach"/>
+
+        <ImageView
+            android:id="@+id/pick_up"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            app:srcCompat="@drawable/pick"/>
+
+        <ImageView
+            android:id="@+id/truck_vectors"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+             app:srcCompat="@drawable/truckvectors"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

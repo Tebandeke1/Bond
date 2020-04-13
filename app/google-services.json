@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "142171145061",
+    "firebase_url": "https://phone-bond.firebaseio.com",
+    "project_id": "phone-bond",
+    "storage_bucket": "phone-bond.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142171145061:android:9d2cb7f666194ecf",
+        "android_client_info": {
+          "package_name": "com.example.phonebond"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142171145061-8t2hoobuh924r2qjp9vcaj23dpiqbc9d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.phonebond",
+            "certificate_hash": "7ee990410c541a52a6c46e806a5a50be97be4f35"
+          }
+        },
+        {
+          "client_id": "142171145061-951du3cvv7iahqi9pp2mc6qj1csolov6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3-ObaZe-legCKMmReU9wa2p7zR0YKoMs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142171145061-951du3cvv7iahqi9pp2mc6qj1csolov6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

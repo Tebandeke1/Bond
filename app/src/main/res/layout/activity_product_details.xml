@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyer.ProductDetailsActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/product_name_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="Product Name"
+                            android:textAlignment="center"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/car_image_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@id/product_name_details"
+                            android:scaleType="centerCrop"
+                            android:cropToPadding="false"
+                            android:layout_centerHorizontal="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/product_colour_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/car_image_details"
+                            android:text="Product Colour"
+                            android:textAlignment="center"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/product_price_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/product_colour_details"
+                            android:layout_marginTop="3dp"
+                            android:textAlignment="center"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold"
+                            android:text="Product Price"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/product_description_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/product_price_details"
+                            android:layout_marginTop="3dp"
+                            android:textAlignment="center"
+                            android:layout_centerHorizontal="true"
+                            android:text="Product Description"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15dp" />
+
+
+                        <TextView
+                            android:id="@+id/Bond_Name_address_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/product_description_details"
+                            android:layout_marginTop="3dp"
+                            android:textAlignment="center"
+                            android:layout_centerHorizontal="true"
+                            android:text="Bond Name and Address"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15dp" />
+
+                        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                            android:id="@+id/elegant_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Bond_Name_address_details"
+                            android:layout_centerHorizontal="true"
+                            android:elevation="6dp"
+                            android:layout_marginTop="8dp"
+                            app:initialNumber="1"
+                            app:finalNumber="5"
+                            >
+
+                        </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+                        <Button
+                            android:id="@+id/add_to_chart_btn"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_below="@+id/elegant_number"
+                            android:text="Add to chart"
+                            android:textAllCaps="false"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:layout_margin="15dp"
+                            android:textSize="18dp"
+                            android:textColor="@color/White"
+                            android:layout_centerHorizontal="true"
+                            />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+     </ScrollView>
+
+</RelativeLayout>

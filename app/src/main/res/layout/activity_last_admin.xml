@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.LastAdminActivity">
+
+    <TextView
+        android:id="@+id/welcomeAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome Admin"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/Edit_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit products "
+        android:textSize="20dp"
+        android:textColor="@color/White"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/welcomeAdmin"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/Check_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/check_client_orders"
+        android:textSize="20dp"
+        android:textColor="@color/White"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Edit_products"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/Approve_Cars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Approve Bond Products"
+        android:textSize="20dp"
+        android:textColor="@color/White"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Check_orders"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"/>
+    <Button
+        android:id="@+id/Admin_logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/admin_logout"
+        android:textSize="20dp"
+        android:textColor="@color/White"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bond.SellerSignActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_seller"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/sign"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/seller_reg_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Seller Registration Form"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold|italic"
+                    android:gravity="center"
+                    android:layout_below="@id/img_seller"
+                    android:layout_margin="10dp"
+                    android:textSize="24dp"
+                    />
+
+
+                <EditText
+                    android:id="@+id/Seller_bond_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/seller_reg_text"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Bond Name"
+                    android:layout_margin="10dp"/>
+
+                <EditText
+                    android:id="@+id/Seller_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/Seller_bond_name"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:layout_margin="10dp"/>
+
+                <EditText
+                    android:id="@+id/Seller_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:inputType="number"
+                    android:hint="Phone Number.."
+                    android:layout_below="@id/Seller_Email"/>
+
+                <EditText
+                    android:id="@+id/Seller_Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:inputType="textMultiLine"
+                    android:layout_below="@id/Seller_phone"
+                    android:hint="Bond Address"/>
+
+                <EditText
+                    android:id="@+id/Seller_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:inputType="textMultiLine"
+                    android:layout_below="@id/Seller_Address"
+                    android:hint="Password.."/>
+
+                <Button
+                    android:id="@+id/seller_reg_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:background="@color/White"
+                    android:textSize="15dp"
+                    android:text="Register"
+                    android:layout_below="@id/Seller_password"
+                    />
+
+                <Button
+                    android:id="@+id/seller_already_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textAllCaps="false"
+                    android:background="@color/colorPrimary"
+                    android:textSize="15dp"
+                    android:text="Already Registered.."
+                    android:layout_below="@id/seller_reg_btn"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
